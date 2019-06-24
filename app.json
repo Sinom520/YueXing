@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/search/search",
+    "pages/detail/detail",
+    "pages/index/index",
+    "pages/newMusic/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "悦行",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

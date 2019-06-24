@@ -1,0 +1,8 @@
+<view>
+  <image class='background' style='opacity:{{0.6}}' src="../../image/3.jpg" mode="aspectFill" ></image>
+  <text class='welcome'>欢迎进入语音导航列表...</text>
+  <view class='item-detail'  wx:for = "{{item}}" wx:key = "item">
+    <button class="item-name"  bindtap='gotoNewMusice' >{{item}}</button>
+  </view>
+  <button bindtap='gotoNewMusice' class = '.share-btn' plain = 'true'>上传你的语音</button>
+</view>

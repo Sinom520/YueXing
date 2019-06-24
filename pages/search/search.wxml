@@ -1,0 +1,41 @@
+<!--pages/search/search.wxml-->
+
+<view class='BackgroundImage' style='opacity:{{0.6}}'> 
+   <image class='img'  src='../../image/1.jpg' mode='scaleToFill'/>
+</view>
+
+<!-- 搜索框view -->
+<view class="search_con">
+  <text class='welcome'>欢迎进入悦行</text>
+  <!-- 表单 -->
+  <form bindsubmit="formSubmit">
+  <!-- 设置name值，这样JS才能接收name=keyword的值 -->
+    <view class='showicon'>
+      <view class='iconfont icon-chaxun'/>
+      <input type="text" name="keyword" class="search_input" placeholder='你要去哪里？' placeholder-class='inputStyle' />
+    </view>
+    <view class='showicon'>
+      <view class='iconfont1 icon-ai226'/>
+      <button formType="submit" class="search_btn">Go</button>
+    </view>  
+  </form>
+</view>
+ 
+<!-- 搜索结果展示 -->
+<view wx:for="{{re}}" wx:key="re" class="search_result">
+  <!-- 当提交空白表单的时候 -->
+  <view wx:if="{{item.emptyflag}}">
+     <view class="empty">{{item.empty}}</view>
+  </view>
+  <!-- 当查询不到结果的时候 -->
+  <view wx:elif="{{item.noresultflag}}">
+    <view class="noresult">{{item.noresult}}</view>
+  </view>
+  <!-- 当有搜索结果的时候 -->
+  <view wx:else>
+    <navigator class="resname" style='opacity:{{0.6}}' url='../detail/detail?keyword={{item.name}}'>{{item.name}}</navigator>
+  </view>
+</view>
+
+
+

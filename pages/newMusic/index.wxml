@@ -1,0 +1,30 @@
+<view >
+  <image class='BackgroundImage' style='opacity:{{0.6}}' src="../../image/2.jpg" mode="aspectFill" />
+<view>
+  <button class="search_btn" bindtap='startRecordMp3'>录音开始（mp3）</button>
+</view>
+<view>
+  <button class="search_btn" bindtap='stopRecord' >录音结束</button>
+</view>
+<view>
+  <button class="search_btn" bindtap='playRecord'>播放录音</button>
+</view>
+<view>
+  <button class="search_btn" bindtap='uploadRecord'>上传录音</button>
+</view>
+</view>
+
+<!-- <view class="newsInfo">
+   <block wx:for="{{Industry}}" >
+    <view class="newsList" wx:for-index="idx"  bindtap="showDetail" id="{{item.id}}">
+      <view class="image">
+        <image style="width:110px;height:80px;" src="https://localhost:8080/yuexing/"></image>
+      </view>
+      <view class="news_title">
+        <text class="title_subject">{{item.title}}\n</text>
+        <text class="title">{{item.vedio}}</text><text class="dianping">倾听 {{item.view}}  下载 {{item.down}}</text>
+      </view>
+      </view>
+    <view class="hr"></view>
+   </block>
+</view> -->

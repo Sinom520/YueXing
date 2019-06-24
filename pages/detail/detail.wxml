@@ -1,0 +1,18 @@
+<!--pages/details/details.wxml-->
+<view>
+  <image class='background' src="{{image}}" style='opacity:{{0.6}}' mode="aspectFill"></image>
+
+  <view class='textView'>
+    <text class='txt'></text>
+    <view class='view1'>
+      <text class='text1'>{{name}}</text>
+    </view>
+    <view class='view2'>
+      <text class='text2'>{{details}}</text>
+    </view>
+  </view>
+
+  <view bindtap='voice'>
+    <image class='iconSize' src='../../image/4.png'></image>
+  </view>
+</view>
